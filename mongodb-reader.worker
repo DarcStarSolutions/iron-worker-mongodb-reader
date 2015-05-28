@@ -1,0 +1,5 @@
+# define the runtime language
+runtime "java"
+stack "java-1.8"
+# exec is the file that will be executed:
+exec "./build/libs/iron-worker-mongodb-reader-0.0.1.jar"
