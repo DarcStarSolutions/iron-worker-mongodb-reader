@@ -20,6 +20,8 @@ public class TimeStamp {
 
     private UUID uuid;
 
+    private boolean read;
+
     public BigInteger getId() {
         return id;
     }
@@ -44,12 +46,21 @@ public class TimeStamp {
         this.uuid = uuid;
     }
 
+    public boolean isRead() {
+        return read;
+    }
+
+    public void setRead(boolean read) {
+        this.read = read;
+    }
+
     @Override
     public String toString() {
         return "TimeStamp{" +
                 "id=" + id +
                 ", time=" + time +
                 ", uuid=" + uuid +
+                ", read=" + read +
                 '}';
     }
 }
