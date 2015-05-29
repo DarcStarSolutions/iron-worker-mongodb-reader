@@ -59,6 +59,8 @@ public class Application implements CommandLineRunner {
             BigInteger id = new BigInteger(idString, 16);
             System.out.println("Id: " + id.toString());
             TimeStamp timeStamp = repository.findOne(id);
+            timeStamp.setRead(true);
+            repository.save(timeStamp);
             System.out.println(timeStamp.toString());
         }
     }

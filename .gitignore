@@ -2,6 +2,10 @@
 .gradle
 build/
 
+iron.json
+src/main/resources/application.properties
+
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
